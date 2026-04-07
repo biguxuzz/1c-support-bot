@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="Страницы" id="70">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="71"/>
+			<ChildItems>
+				<Page name="СтраницаОсновныеДанные" id="72">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные данные</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаОсновныеДанныеРасширеннаяПодсказка" id="73"/>
+					<ChildItems>
+						<InputField name="УниверсальнаяДатаВМиллисекундах" id="1">
+							<DataPath>Запись.УниверсальнаяДатаВМиллисекундах</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="УниверсальнаяДатаВМиллисекундахКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="УниверсальнаяДатаВМиллисекундахРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="Идентификатор" id="4">
+							<DataPath>Запись.Идентификатор</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИдентификаторКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ИдентификаторРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="ВходныеТокены" id="7">
+							<DataPath>Запись.ВходныеТокены</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ВходныеТокеныКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ВходныеТокеныРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="ВыходныеТокены" id="10">
+							<DataPath>Запись.ВыходныеТокены</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ВыходныеТокеныКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ВыходныеТокеныРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="ВсегоТокенов" id="13">
+							<DataPath>Запись.ВсегоТокенов</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ВсегоТокеновКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ВсегоТокеновРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="ВыходныеТокеныВКеше" id="16">
+							<DataPath>Запись.ВыходныеТокеныВКеше</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ВыходныеТокеныВКешеКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ВыходныеТокеныВКешеРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="СтоимостьОтвета" id="22">
+							<DataPath>Запись.СтоимостьОтвета</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СтоимостьОтветаКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="СтоимостьОтветаРасширеннаяПодсказка" id="24"/>
+						</InputField>
+						<InputField name="Модель" id="31">
+							<DataPath>Запись.Модель</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="МодельКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="МодельРасширеннаяПодсказка" id="33"/>
+						</InputField>
+						<InputField name="ДатаЗапроса" id="28">
+							<DataPath>Запись.ДатаЗапроса</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДатаЗапросаКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ДатаЗапросаРасширеннаяПодсказка" id="30"/>
+						</InputField>
+						<InputField name="IDЗапроса" id="25">
+							<DataPath>Запись.IDЗапроса</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="IDЗапросаКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="IDЗапросаРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<InputField name="ДатаСоздания" id="34">
+							<DataPath>Запись.ДатаСоздания</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="36"/>
+						</InputField>
+						<InputField name="ТипОбъекта" id="40">
+							<DataPath>Запись.ТипОбъекта</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТипОбъектаКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ТипОбъектаРасширеннаяПодсказка" id="42"/>
+						</InputField>
+						<InputField name="ТарифСервиса" id="43">
+							<DataPath>Запись.ТарифСервиса</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТарифСервисаКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ТарифСервисаРасширеннаяПодсказка" id="45"/>
+						</InputField>
+						<InputField name="МодельОтвета" id="37">
+							<DataPath>Запись.МодельОтвета</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="МодельОтветаКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="МодельОтветаРасширеннаяПодсказка" id="39"/>
+						</InputField>
+						<InputField name="ПричинаЗавершения" id="49">
+							<DataPath>Запись.ПричинаЗавершения</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПричинаЗавершенияКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="ПричинаЗавершенияРасширеннаяПодсказка" id="51"/>
+						</InputField>
+						<CheckBoxField name="ЭтоОшибка" id="55">
+							<DataPath>Запись.ЭтоОшибка</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЭтоОшибкаКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ЭтоОшибкаРасширеннаяПодсказка" id="57"/>
+						</CheckBoxField>
+						<InputField name="ХэшМодели" id="46">
+							<DataPath>Запись.ХэшМодели</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ХэшМоделиКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="ХэшМоделиРасширеннаяПодсказка" id="48"/>
+						</InputField>
+						<InputField name="ВремяОтветаСекунд" id="19">
+							<DataPath>Запись.ВремяОтветаСекунд</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ВремяОтветаСекундКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ВремяОтветаСекундРасширеннаяПодсказка" id="21"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПромпты" id="74">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Промпты</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаПромптыРасширеннаяПодсказка" id="75"/>
+					<ChildItems>
+						<InputField name="ИсторияСообщенийJSON" id="67">
+							<DataPath>Запись.ИсторияСообщенийJSON</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MultiLine>true</MultiLine>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИсторияСообщенийJSONКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="ИсторияСообщенийJSONРасширеннаяПодсказка" id="69"/>
+						</InputField>
+						<InputField name="СистемныйПромпт" id="64">
+							<DataPath>Запись.СистемныйПромпт</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MultiLine>true</MultiLine>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СистемныйПромптКонтекстноеМеню" id="65"/>
+							<ExtendedTooltip name="СистемныйПромптРасширеннаяПодсказка" id="66"/>
+						</InputField>
+						<InputField name="ПользовательскийПромпт" id="61">
+							<DataPath>Запись.ПользовательскийПромпт</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MultiLine>true</MultiLine>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПользовательскийПромптКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ПользовательскийПромптРасширеннаяПодсказка" id="63"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОтветы" id="76">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ответы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОтветыРасширеннаяПодсказка" id="77"/>
+					<ChildItems>
+						<InputField name="ТекстОтвета" id="58">
+							<DataPath>Запись.ТекстОтвета</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MultiLine>true</MultiLine>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТекстОтветаКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="ТекстОтветаРасширеннаяПодсказка" id="60"/>
+						</InputField>
+						<InputField name="ТекстОшибки" id="52">
+							<DataPath>Запись.ТекстОшибки</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MultiLine>true</MultiLine>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТекстОшибкиКонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="ТекстОшибкиРасширеннаяПодсказка" id="54"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.КИИ_ЛогЗапросовИИ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

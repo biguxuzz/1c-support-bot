@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОбновитьИнструменты" id="62">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновитьИнструменты</CommandName>
+				<ExtendedTooltip name="ФормаОбновитьИнструментыРасширеннаяПодсказка" id="63"/>
+			</Button>
+			<Button name="ФормаПроверитьПодключение" id="64">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПроверитьПодключение</CommandName>
+				<ExtendedTooltip name="ФормаПроверитьПодключениеРасширеннаяПодсказка" id="65"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаОсновные" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основные параметры</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаОсновныеРасширеннаяПодсказка" id="56"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Адрес" id="7">
+					<DataPath>Объект.Адрес</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="АдресКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="АдресЗапроса" id="10">
+					<DataPath>Объект.АдресЗапроса</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="АдресЗапросаКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="АдресЗапросаРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="ТипПодключения" id="22">
+					<DataPath>Объект.ТипПодключения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТипПодключенияКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ТипПодключенияРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="ТипАвторизации" id="19">
+					<DataPath>Объект.ТипАвторизации</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТипАвторизацииКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ТипАвторизацииРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="КлючAPI" id="47">
+					<DataPath>КлючAPI</DataPath>
+					<PasswordMode>true</PasswordMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КлючAPIКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="КлючAPIРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="ИмяПоляТекста" id="13">
+					<DataPath>Объект.ИмяПоляТекста</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИмяПоляТекстаКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ИмяПоляТекстаРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<CheckBoxField name="ИспользоватьЗащищенноеСоединение" id="16">
+					<DataPath>Объект.ИспользоватьЗащищенноеСоединение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьЗащищенноеСоединениеКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ИспользоватьЗащищенноеСоединениеРасширеннаяПодсказка" id="18"/>
+				</CheckBoxField>
+				<LabelField name="Состояние" id="60">
+					<DataPath>Состояние</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<BorderColor>style:BorderColor</BorderColor>
+					<BackColor>style:FieldBackColor</BackColor>
+					<ContextMenu name="СостояниеКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="52"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Заголовки" id="25">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Заголовки</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЗаголовкиКонтекстноеМеню" id="26"/>
+			<AutoCommandBar name="ЗаголовкиКоманднаяПанель" id="27"/>
+			<ExtendedTooltip name="ЗаголовкиРасширеннаяПодсказка" id="28"/>
+			<SearchStringAddition name="ЗаголовкиСтрокаПоиска" id="29">
+				<AdditionSource>
+					<Item>Заголовки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗаголовкиСтрокаПоискаКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ЗаголовкиСтрокаПоискаРасширеннаяПодсказка" id="31"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЗаголовкиСостояниеПросмотра" id="32">
+				<AdditionSource>
+					<Item>Заголовки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗаголовкиСостояниеПросмотраКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ЗаголовкиСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЗаголовкиУправлениеПоиском" id="35">
+				<AdditionSource>
+					<Item>Заголовки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗаголовкиУправлениеПоискомКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="ЗаголовкиУправлениеПоискомРасширеннаяПодсказка" id="37"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ЗаголовкиНомерСтроки" id="38">
+					<DataPath>Объект.Заголовки.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗаголовкиНомерСтрокиКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ЗаголовкиНомерСтрокиРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<InputField name="ЗаголовкиКлюч" id="41">
+					<DataPath>Объект.Заголовки.Ключ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаголовкиКлючКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ЗаголовкиКлючРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ЗаголовкиЗначение" id="44">
+					<DataPath>Объект.Заголовки.Значение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаголовкиЗначениеКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ЗаголовкиЗначениеРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаИнструменты" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инструменты MCP</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаИнструментыРасширеннаяПодсказка" id="54"/>
+			<ChildItems>
+				<Table name="Инструменты" id="57">
+					<Representation>List</Representation>
+					<ReadOnly>true</ReadOnly>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Инструменты</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ИнструментыКонтекстноеМеню" id="58"/>
+					<AutoCommandBar name="ИнструментыКоманднаяПанель" id="59"/>
+					<ExtendedTooltip name="ИнструментыРасширеннаяПодсказка" id="50"/>
+					<SearchStringAddition name="ИнструментыСтрокаПоиска" id="66">
+						<AdditionSource>
+							<Item>Инструменты</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ИнструментыСтрокаПоискаКонтекстноеМеню" id="67"/>
+						<ExtendedTooltip name="ИнструментыСтрокаПоискаРасширеннаяПодсказка" id="68"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ИнструментыСостояниеПросмотра" id="69">
+						<AdditionSource>
+							<Item>Инструменты</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ИнструментыСостояниеПросмотраКонтекстноеМеню" id="70"/>
+						<ExtendedTooltip name="ИнструментыСостояниеПросмотраРасширеннаяПодсказка" id="71"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ИнструментыУправлениеПоиском" id="72">
+						<AdditionSource>
+							<Item>Инструменты</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ИнструментыУправлениеПоискомКонтекстноеМеню" id="73"/>
+						<ExtendedTooltip name="ИнструментыУправлениеПоискомРасширеннаяПодсказка" id="74"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ИнструментыНаименование" id="75">
+							<DataPath>Инструменты.Наименование</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИнструментыНаименованиеКонтекстноеМеню" id="76"/>
+							<ExtendedTooltip name="ИнструментыНаименованиеРасширеннаяПодсказка" id="77"/>
+						</InputField>
+						<InputField name="ИнструментыОписание" id="78">
+							<DataPath>Инструменты.Описание</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИнструментыОписаниеКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="ИнструментыОписаниеРасширеннаяПодсказка" id="80"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.КИИ_MCPСерверы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КлючAPI" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ API</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>500</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Инструменты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инструменты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Наименование" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Описание" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Состояние" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>200</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьИнструменты" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить инструменты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список инструментов с MCP-сервера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьИнструменты</Action>
+		</Command>
+		<Command name="ПроверитьПодключение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение к MCP-серверу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьПодключение</Action>
+		</Command>
+	</Commands>
+</Form>

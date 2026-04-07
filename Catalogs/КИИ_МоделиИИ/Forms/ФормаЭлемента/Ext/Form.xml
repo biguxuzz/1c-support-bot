@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПроверитьПодключение" id="70">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПроверитьПодключение</CommandName>
+				<ExtendedTooltip name="ФормаПроверитьПодключениеРасширеннаяПодсказка" id="71"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="45"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="НаименованиеПолное" id="49">
+					<DataPath>Объект.НаименованиеПолное</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НаименованиеПолноеКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="НаименованиеПолноеРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="Адрес" id="7">
+					<DataPath>Объект.Адрес</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="АдресКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="АдресЗапроса" id="13">
+					<DataPath>Объект.АдресЗапроса</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="АдресЗапросаКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="АдресЗапросаРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="Таймаут" id="67">
+					<DataPath>Объект.Таймаут</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаймаутКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ТаймаутРасширеннаяПодсказка" id="69"/>
+				</InputField>
+				<InputField name="КлючAPI" id="10">
+					<DataPath>КлючAPI</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<PasswordMode>true</PasswordMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КлючAPIКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="КлючAPIРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<InputField name="ТипАвторизации" id="58">
+					<DataPath>Объект.ТипАвторизации</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТипАвторизацииКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ТипАвторизацииРасширеннаяПодсказка" id="60"/>
+				</InputField>
+				<InputField name="ТипФорматаAPI" id="64">
+					<DataPath>Объект.ТипФорматаAPI</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТипФорматаAPIКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ТипФорматаAPIРасширеннаяПодсказка" id="66"/>
+				</InputField>
+				<InputField name="Температура" id="19">
+					<DataPath>Объект.Температура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТемператураКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ТемператураРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="МаксимумТокенов" id="46">
+					<DataPath>Объект.МаксимумТокенов</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МаксимумТокеновКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="МаксимумТокеновРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<CheckBoxField name="ПоддерживаетToolCalling" id="72">
+					<DataPath>Объект.ПоддерживаетToolCalling</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПоддерживаетToolCallingКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ПоддерживаетToolCallingРасширеннаяПодсказка" id="74"/>
+				</CheckBoxField>
+				<CheckBoxField name="ИспользоватьЗащищенноеСоединение" id="52">
+					<DataPath>Объект.ИспользоватьЗащищенноеСоединение</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьЗащищенноеСоединениеКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ИспользоватьЗащищенноеСоединениеРасширеннаяПодсказка" id="54"/>
+				</CheckBoxField>
+				<InputField name="Описание" id="55">
+					<DataPath>Объект.Описание</DataPath>
+					<MultiLine>true</MultiLine>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОписаниеКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="57"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Заголовки" id="22">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Заголовки</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЗаголовкиКонтекстноеМеню" id="23"/>
+			<AutoCommandBar name="ЗаголовкиКоманднаяПанель" id="24"/>
+			<ExtendedTooltip name="ЗаголовкиРасширеннаяПодсказка" id="25"/>
+			<SearchStringAddition name="ЗаголовкиСтрокаПоиска" id="26">
+				<AdditionSource>
+					<Item>Заголовки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗаголовкиСтрокаПоискаКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ЗаголовкиСтрокаПоискаРасширеннаяПодсказка" id="28"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЗаголовкиСостояниеПросмотра" id="29">
+				<AdditionSource>
+					<Item>Заголовки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗаголовкиСостояниеПросмотраКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ЗаголовкиСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЗаголовкиУправлениеПоиском" id="32">
+				<AdditionSource>
+					<Item>Заголовки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗаголовкиУправлениеПоискомКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ЗаголовкиУправлениеПоискомРасширеннаяПодсказка" id="34"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ЗаголовкиНомерСтроки" id="35">
+					<DataPath>Объект.Заголовки.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗаголовкиНомерСтрокиКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ЗаголовкиНомерСтрокиРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+				<InputField name="ЗаголовкиКлюч" id="38">
+					<DataPath>Объект.Заголовки.Ключ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаголовкиКлючКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ЗаголовкиКлючРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ЗаголовкиЗначение" id="41">
+					<DataPath>Объект.Заголовки.Значение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаголовкиЗначениеКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ЗаголовкиЗначениеРасширеннаяПодсказка" id="43"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.КИИ_МоделиИИ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КлючAPI" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ API</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>500</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьПодключение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьПодключение</Action>
+		</Command>
+	</Commands>
+</Form>
