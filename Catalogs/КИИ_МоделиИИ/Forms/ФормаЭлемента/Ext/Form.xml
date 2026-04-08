@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
-	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
@@ -23,6 +24,7 @@
 					<v8:content>Шапка</v8:content>
 				</v8:item>
 			</Title>
+			<Group>HorizontalIfPossible</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="45"/>
@@ -31,6 +33,7 @@
 					<DataPath>Объект.Code</DataPath>
 					<Visible>false</Visible>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
@@ -38,6 +41,7 @@
 				<InputField name="Наименование" id="4">
 					<DataPath>Объект.Description</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
@@ -51,6 +55,7 @@
 				<InputField name="Адрес" id="7">
 					<DataPath>Объект.Адрес</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="АдресКонтекстноеМеню" id="8"/>
 					<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="9"/>
@@ -58,6 +63,7 @@
 				<InputField name="АдресЗапроса" id="13">
 					<DataPath>Объект.АдресЗапроса</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="АдресЗапросаКонтекстноеМеню" id="14"/>
 					<ExtendedTooltip name="АдресЗапросаРасширеннаяПодсказка" id="15"/>
@@ -71,6 +77,7 @@
 				<InputField name="КлючAPI" id="10">
 					<DataPath>КлючAPI</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<PasswordMode>true</PasswordMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КлючAPIКонтекстноеМеню" id="11"/>
@@ -91,6 +98,7 @@
 				<InputField name="Температура" id="19">
 					<DataPath>Объект.Температура</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТемператураКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="ТемператураРасширеннаяПодсказка" id="21"/>
@@ -103,13 +111,11 @@
 				</InputField>
 				<CheckBoxField name="ПоддерживаетToolCalling" id="72">
 					<DataPath>Объект.ПоддерживаетToolCalling</DataPath>
-					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ПоддерживаетToolCallingКонтекстноеМеню" id="73"/>
 					<ExtendedTooltip name="ПоддерживаетToolCallingРасширеннаяПодсказка" id="74"/>
 				</CheckBoxField>
 				<CheckBoxField name="ИспользоватьЗащищенноеСоединение" id="52">
 					<DataPath>Объект.ИспользоватьЗащищенноеСоединение</DataPath>
-					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ИспользоватьЗащищенноеСоединениеКонтекстноеМеню" id="53"/>
 					<ExtendedTooltip name="ИспользоватьЗащищенноеСоединениеРасширеннаяПодсказка" id="54"/>
 				</CheckBoxField>
@@ -124,6 +130,8 @@
 		</UsualGroup>
 		<Table name="Заголовки" id="22">
 			<Representation>List</Representation>
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
@@ -160,12 +168,14 @@
 				<LabelField name="ЗаголовкиНомерСтроки" id="35">
 					<DataPath>Объект.Заголовки.LineNumber</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ЗаголовкиНомерСтрокиКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="ЗаголовкиНомерСтрокиРасширеннаяПодсказка" id="37"/>
 				</LabelField>
 				<InputField name="ЗаголовкиКлюч" id="38">
 					<DataPath>Объект.Заголовки.Ключ</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ЗаголовкиКлючКонтекстноеМеню" id="39"/>
 					<ExtendedTooltip name="ЗаголовкиКлючРасширеннаяПодсказка" id="40"/>
@@ -173,6 +183,7 @@
 				<InputField name="ЗаголовкиЗначение" id="41">
 					<DataPath>Объект.Заголовки.Значение</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ЗаголовкиЗначениеКонтекстноеМеню" id="42"/>
 					<ExtendedTooltip name="ЗаголовкиЗначениеРасширеннаяПодсказка" id="43"/>
