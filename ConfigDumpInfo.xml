@@ -72,7 +72,7 @@
 		<Metadata name="CommonModule.КИИ_МаркдаунПарсерКлиентСервер.Module" id="3d4ea4c1-1e67-44d6-983d-5878bdfd0133.0" configVersion="07a53e15d91a58e42f21f62f6c7fdd18c5908922"/>
 		<Metadata name="CommonPicture.КИИ_КартинкаПодсистемы" id="c4ba66d1-52f1-4a01-b502-1966d4070559" configVersion="c8977a91773a34d7ada7b29b02fc37e92cf9df89"/>
 		<Metadata name="CommonPicture.КИИ_КартинкаПодсистемы.Picture" id="c4ba66d1-52f1-4a01-b502-1966d4070559.0" configVersion="435f94188eb0dd0ec7b0c88de0bacb213fac65b3"/>
-		<Metadata name="Configuration.ИИКона" id="450ad8b8-f50e-4ba6-bc24-831f6dec8aa9" configVersion="d470c8da54dc3cbcc1bae91caa19ea8fb93f99e8"/>
+		<Metadata name="Configuration.ИИКона" id="450ad8b8-f50e-4ba6-bc24-831f6dec8aa9" configVersion="cf5f02027d963ed722a31b12e4ec2c44e29c233f"/>
 		<Metadata name="DataProcessor.КИИ_ТестИИ" id="d42ca800-f3ce-4d4d-a2e1-d85702a80243" configVersion="24e79336430e8b327c4d72fb2f6d35e23362ab74"/>
 		<Metadata name="DataProcessor.КИИ_ТестИИ.Form.Форма" id="8447382b-f13f-4eff-8d3e-d2edfa32ca4e" configVersion="28de3bebb06ab1f55ea069ceb5dda723d552bb8d"/>
 		<Metadata name="DataProcessor.КИИ_ТестИИ.Form.Форма.Form" id="8447382b-f13f-4eff-8d3e-d2edfa32ca4e.0" configVersion="4ddd22c5877e2e2f3710941b92570a9863b43a1b"/>
