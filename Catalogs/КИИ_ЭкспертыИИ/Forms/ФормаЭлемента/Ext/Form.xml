@@ -1,14 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
-	<WindowOpeningMode>LockOwner</WindowOpeningMode>
-	<Group>Vertical</Group>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<InputField name="Код" id="1">
 			<DataPath>Объект.Code</DataPath>
 			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
@@ -16,7 +14,6 @@
 		<InputField name="Наименование" id="4">
 			<DataPath>Объект.Description</DataPath>
 			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
@@ -24,7 +21,6 @@
 		<InputField name="Модель" id="7">
 			<DataPath>Объект.Модель</DataPath>
 			<EditMode>EnterOnInput</EditMode>
-			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="МодельКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="МодельРасширеннаяПодсказка" id="9"/>
@@ -62,7 +58,6 @@
 						<InputField name="ОписаниеЭксперта" id="10">
 							<DataPath>Объект.ОписаниеЭксперта</DataPath>
 							<EditMode>EnterOnInput</EditMode>
-							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<Height>10</Height>
 							<MultiLine>true</MultiLine>
@@ -88,11 +83,12 @@
 					<ExtendedTooltip name="СтраницаИнструментыРасширеннаяПодсказка" id="22"/>
 					<ChildItems>
 						<Table name="Инструменты" id="23">
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<DataPath>Объект.Инструменты</DataPath>
-							<ShowCommandBar>auto</ShowCommandBar>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ИнструментыКонтекстноеМеню" id="24"/>
 							<AutoCommandBar name="ИнструментыКоманднаяПанель" id="25"/>
@@ -125,14 +121,12 @@
 								<LabelField name="Инструменты1НомерСтроки" id="44">
 									<DataPath>Объект.Инструменты.LineNumber</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="Инструменты1НомерСтрокиКонтекстноеМеню" id="45"/>
 									<ExtendedTooltip name="Инструменты1НомерСтрокиРасширеннаяПодсказка" id="46"/>
 								</LabelField>
 								<InputField name="Инструменты1MCP" id="48">
 									<DataPath>Объект.Инструменты.MCP</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="Инструменты1MCPКонтекстноеМеню" id="49"/>
 									<ExtendedTooltip name="Инструменты1MCPРасширеннаяПодсказка" id="50"/>
@@ -140,7 +134,6 @@
 								<InputField name="Инструменты1Инструмент" id="52">
 									<DataPath>Объект.Инструменты.Инструмент</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="Инструменты1ИнструментКонтекстноеМеню" id="53"/>
 									<ExtendedTooltip name="Инструменты1ИнструментРасширеннаяПодсказка" id="54"/>
@@ -148,7 +141,7 @@
 								<CheckBoxField name="Инструменты1Использовать" id="56">
 									<DataPath>Объект.Инструменты.Использовать</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
+									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="Инструменты1ИспользоватьКонтекстноеМеню" id="57"/>
 									<ExtendedTooltip name="Инструменты1ИспользоватьРасширеннаяПодсказка" id="58"/>
 								</CheckBoxField>
