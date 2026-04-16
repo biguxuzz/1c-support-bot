@@ -31,6 +31,9 @@
 					<DataPath>ОтветHTML</DataPath>
 					<ContextMenu name="ОтветHTMLКонтекстноеМеню" id="24"/>
 					<ExtendedTooltip name="ОтветHTMLРасширеннаяПодсказка" id="25"/>
+					<Events>
+						<Event name="OnClick">ОтветHTMLПриНажатии</Event>
+					</Events>
 				</HTMLDocumentField>
 				<InputField name="Промпт" id="1">
 					<DataPath>Промпт</DataPath>
