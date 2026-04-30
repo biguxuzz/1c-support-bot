@@ -1,0 +1,76 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "*"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref_name }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+env:
+  V8_VERSION: 8.3.27.1859
+  LANG: ru_RU.UTF-8
+
+jobs:
+  draft_release:
+    name: Draft release
+    runs-on: windows-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: pwsh
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - name: Install 1C:Enterprise
+        uses: 1CDevFlow/onec-setup-action@e1cd5937cb951c3cdeda4bf482f89da5f5e0b148
+        with:
+          type: onec
+          onec_version: ${{ env.V8_VERSION }}
+          cache: true
+        env:
+          ONEC_USERNAME: ${{ secrets.ONEC_USERNAME }}
+          ONEC_PASSWORD: ${{ secrets.ONEC_PASSWORD }}
+        timeout-minutes: 15
+
+      - name: Create infobase from buildcf
+        run: |
+          mkdir dist
+          mkdir server-data
+          ibcmd infobase --data="$env:GITHUB_WORKSPACE\server-data" --db-path=file-db create --import=buildcf --apply --force
+        timeout-minutes: 5
+
+      - name: Import AIKON extension
+        run: ibcmd infobase --data="$env:GITHUB_WORKSPACE\server-data" --db-path=file-db config import --extension=ИИКона "$env:GITHUB_WORKSPACE"
+        timeout-minutes: 5
+
+      - name: Save AIKON.cfe
+        run: ibcmd infobase --data="$env:GITHUB_WORKSPACE\server-data" --db-path=file-db config save --extension=ИИКона dist\AIKON.cfe
+        timeout-minutes: 5
+
+      - name: Upload AIKON.cfe artifact
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: AIKON.cfe
+          path: dist\AIKON.cfe
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Create draft release
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65
+        with:
+          draft: false
+          files: dist\AIKON.cfe
+          fail_on_unmatched_files: true
+          generate_release_notes: true
+          append_body: false
+          name: Release ${{ github.ref_name }}
+          tag_name: ${{ github.ref_name }}
+          token: ${{ secrets.GITHUB_TOKEN }}
