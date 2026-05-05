@@ -42,8 +42,7 @@ jobs:
 
       - name: Extract version
         run: |
-          [xml]$config = Get-Content Configuration.xml
-          $ver = $config.Configuration.Properties.Version
+          $ver = (Select-String -Path Configuration.xml -Pattern '<Version>(.+?)</Version>' | Select-Object -First 1).Matches.Groups[1].Value
           $verUs = $ver -replace '\.', '_'
           echo "EXT_VERSION=$verUs" >> $env:GITHUB_ENV
           echo "Version: $ver => $verUs"
