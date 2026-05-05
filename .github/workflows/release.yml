@@ -40,6 +40,14 @@ jobs:
           ONEC_PASSWORD: ${{ secrets.ONEC_PASSWORD }}
         timeout-minutes: 15
 
+      - name: Extract version
+        run: |
+          [xml]$config = Get-Content Configuration.xml
+          $ver = $config.Configuration.Properties.Version
+          $verUs = $ver -replace '\.', '_'
+          echo "EXT_VERSION=$verUs" >> $env:GITHUB_ENV
+          echo "Version: $ver => $verUs"
+
       - name: Create infobase from buildcf
         run: |
           mkdir dist
@@ -52,14 +60,14 @@ jobs:
         timeout-minutes: 5
 
       - name: Save AIKON.cfe
-        run: ibcmd infobase --data="$env:GITHUB_WORKSPACE\server-data" --db-path=file-db config save --extension=ИИКона dist\AIKON.cfe
+        run: ibcmd infobase --data="$env:GITHUB_WORKSPACE\server-data" --db-path=file-db config save --extension=ИИКона "dist\AIKON_${{ env.EXT_VERSION }}_${{ github.run_number }}.cfe"
         timeout-minutes: 5
 
       - name: Upload AIKON.cfe artifact
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: AIKON.cfe
-          path: dist\AIKON.cfe
+          name: AIKON_${{ env.EXT_VERSION }}_${{ github.run_number }}.cfe
+          path: dist\AIKON_${{ env.EXT_VERSION }}_${{ github.run_number }}.cfe
           if-no-files-found: error
           retention-days: 30
 
@@ -67,7 +75,7 @@ jobs:
         uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65
         with:
           draft: false
-          files: dist\AIKON.cfe
+          files: dist\AIKON_${{ env.EXT_VERSION }}_${{ github.run_number }}.cfe
           fail_on_unmatched_files: true
           generate_release_notes: true
           append_body: false

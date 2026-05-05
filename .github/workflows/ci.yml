@@ -59,6 +59,14 @@ jobs:
           ONEC_PASSWORD: ${{ secrets.ONEC_PASSWORD }}
         timeout-minutes: 15
 
+      - name: Extract version
+        run: |
+          [xml]$config = Get-Content Configuration.xml
+          $ver = $config.Configuration.Properties.Version
+          $verUs = $ver -replace '\.', '_'
+          echo "EXT_VERSION=$verUs" >> $env:GITHUB_ENV
+          echo "Version: $ver => $verUs"
+
       - name: Create infobase from buildcf
         run: |
           mkdir binary
@@ -71,7 +79,7 @@ jobs:
         timeout-minutes: 5
 
       - name: Save AIKON.cfe
-        run: ibcmd infobase --data="$env:GITHUB_WORKSPACE\server-data" --db-path=file-db config save --extension=ИИКона binary\AIKON.cfe
+        run: ibcmd infobase --data="$env:GITHUB_WORKSPACE\server-data" --db-path=file-db config save --extension=ИИКона "binary\AIKON_${{ env.EXT_VERSION }}_${{ github.run_number }}.cfe"
         timeout-minutes: 5
 
       - name: Upload build artifacts
@@ -86,7 +94,7 @@ jobs:
         uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65
         with:
           tag_name: build-${{ github.run_number }}
-          files: binary\AIKON.cfe
+          files: binary\AIKON_${{ env.EXT_VERSION }}_${{ github.run_number }}.cfe
           fail_on_unmatched_files: true
           generate_release_notes: true
           name: Build ${{ github.run_number }}
