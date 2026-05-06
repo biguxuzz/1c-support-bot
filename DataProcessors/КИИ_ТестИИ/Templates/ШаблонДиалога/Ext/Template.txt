@@ -32,6 +32,18 @@
 	        background-color: #ffebee;
 	        border-left: 3px solid #cd3131;
 	    }
+	    .message.thinking {
+	        background-color: #fff8e1;
+	        border-left: 3px solid #f9a825;
+	        font-style: italic;
+	    }
+	    .message.thinking .content {
+	        animation: thinking-pulse 1.2s ease-in-out infinite;
+	    }
+	    @keyframes thinking-pulse {
+	        0%, 100% { opacity: 0.55; }
+	        50% { opacity: 1; }
+	    }
 	    .role {
 	        font-family: 'Consolas', 'Monaco', 'Menlo', 'Courier New', monospace, 'Segoe UI Emoji', 'Segoe UI Symbol';
 	        font-weight: 600;
@@ -48,6 +60,9 @@
 	    }
 	    .message.error .role {
 	        color: #cd3131;
+	    }
+	    .message.thinking .role {
+	        color: #b08200;
 	    }
 	    .content {
 	        color: #000000;
