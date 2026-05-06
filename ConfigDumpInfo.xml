@@ -15,15 +15,15 @@
 		<Metadata name="Catalog.КИИ_MCPСерверы.Form.ФормаЭлемента" id="753fc07b-2eb0-4997-90ee-534e5fbdde63" configVersion="c5c9a3795c23c711f8c95cd2db11408127ac78d4"/>
 		<Metadata name="Catalog.КИИ_MCPСерверы.Form.ФормаЭлемента.Form" id="753fc07b-2eb0-4997-90ee-534e5fbdde63.0" configVersion="8e332f257268194acd7031b77a5628f72c458a78"/>
 		<Metadata name="Catalog.КИИ_MCPСерверы.Help" id="0e0c94b4-2bfc-4d88-8b76-b3d4a2c2c808.1" configVersion="56f114f74ac3b80f453ff7c9272d64871d11bd25"/>
-		<Metadata name="Catalog.КИИ_MCPСерверы.ManagerModule" id="0e0c94b4-2bfc-4d88-8b76-b3d4a2c2c808.3" configVersion="b244b73b773c224414136caeb6dcd046bce6450e"/>
-		<Metadata name="Catalog.КИИ_MCPСерверы.ObjectModule" id="0e0c94b4-2bfc-4d88-8b76-b3d4a2c2c808.0" configVersion="a51b3d249affdbe59481fc648869579ef118be66"/>
+		<Metadata name="Catalog.КИИ_MCPСерверы.ManagerModule" id="0e0c94b4-2bfc-4d88-8b76-b3d4a2c2c808.3" configVersion="78e22224bde97dab4c775da391606ef9a4665292"/>
+		<Metadata name="Catalog.КИИ_MCPСерверы.ObjectModule" id="0e0c94b4-2bfc-4d88-8b76-b3d4a2c2c808.0" configVersion="277b8cfb3d71f70185ba8762dc9a077cdfe1cab4"/>
 		<Metadata name="Catalog.КИИ_ИнструментыИИ" id="c6b7a32a-168f-456f-9019-b2091e70d937" configVersion="c699cceb7e9672870af00b1029803b45c16e2084">
 			<Metadata name="Catalog.КИИ_ИнструментыИИ.Attribute.Описание" id="36024b95-dabf-467b-8bbf-61ecde74db36"/>
 			<Metadata name="Catalog.КИИ_ИнструментыИИ.Attribute.ПараметрыJSON" id="4eca3171-7f60-40a5-82af-562ed87ec813"/>
 		</Metadata>
 		<Metadata name="Catalog.КИИ_ИнструментыИИ.Help" id="c6b7a32a-168f-456f-9019-b2091e70d937.1" configVersion="aae4ea0a6e10dd6048d7909adfba2a9386850c33"/>
-		<Metadata name="Catalog.КИИ_ИнструментыИИ.ManagerModule" id="c6b7a32a-168f-456f-9019-b2091e70d937.3" configVersion="b49a4117ade390ec3e4c9ee20c690863a830e3c3"/>
-		<Metadata name="Catalog.КИИ_ИнструментыИИ.ObjectModule" id="c6b7a32a-168f-456f-9019-b2091e70d937.0" configVersion="c565f3b8cb0a1473eca616ac76b49e874619f482"/>
+		<Metadata name="Catalog.КИИ_ИнструментыИИ.ManagerModule" id="c6b7a32a-168f-456f-9019-b2091e70d937.3" configVersion="79ad8537a3cb810ff3f2b45d87c27081fe4e20f5"/>
+		<Metadata name="Catalog.КИИ_ИнструментыИИ.ObjectModule" id="c6b7a32a-168f-456f-9019-b2091e70d937.0" configVersion="6b4c5456baf4722be32e5aeaddd4371d09c213c5"/>
 		<Metadata name="Catalog.КИИ_МоделиИИ" id="9db94fc6-bdb5-48ea-9c2e-fdac9920fbf6" configVersion="72b0d0fd884df2844c16be8a0a5964c46d7e72a5">
 			<Metadata name="Catalog.КИИ_МоделиИИ.Attribute.АдресЗапроса" id="0845883e-3462-4e23-8e08-07b66a938697"/>
 			<Metadata name="Catalog.КИИ_МоделиИИ.Attribute.НаименованиеПровайдера" id="12d20cab-9003-4f03-b712-251a60a6fcbe"/>
@@ -47,8 +47,8 @@
 		<Metadata name="Catalog.КИИ_МоделиИИ.Form.ФормаЭлемента" id="1b13a08b-6d7b-4ed2-b2d2-77ea843f00be" configVersion="0ac317f832785941b553c22f2d070ef2fde9101f"/>
 		<Metadata name="Catalog.КИИ_МоделиИИ.Form.ФормаЭлемента.Form" id="1b13a08b-6d7b-4ed2-b2d2-77ea843f00be.0" configVersion="ba4d64e57a38811316b3fab21a1a84429d33f6ef"/>
 		<Metadata name="Catalog.КИИ_МоделиИИ.Help" id="9db94fc6-bdb5-48ea-9c2e-fdac9920fbf6.1" configVersion="ffeefdc52b100add8e38d53d9fc8e66485a3b1b6"/>
-		<Metadata name="Catalog.КИИ_МоделиИИ.ManagerModule" id="9db94fc6-bdb5-48ea-9c2e-fdac9920fbf6.3" configVersion="ea70829a9e8e0a3a8715c6a1271482e13b8429b0"/>
-		<Metadata name="Catalog.КИИ_МоделиИИ.ObjectModule" id="9db94fc6-bdb5-48ea-9c2e-fdac9920fbf6.0" configVersion="092177ab60deed5ef4a27efe3332d599cad4968c"/>
+		<Metadata name="Catalog.КИИ_МоделиИИ.ManagerModule" id="9db94fc6-bdb5-48ea-9c2e-fdac9920fbf6.3" configVersion="3525b8ebfc82f7acc7241da9b2503648c7e7971c"/>
+		<Metadata name="Catalog.КИИ_МоделиИИ.ObjectModule" id="9db94fc6-bdb5-48ea-9c2e-fdac9920fbf6.0" configVersion="4dfcce1b2cc0213a56a55ce8494085f78ad2a873"/>
 		<Metadata name="Catalog.КИИ_МоделиИИ.Template.ПредустановленныеМодели" id="7f6ae4b9-aebb-4bfc-890d-29e6d9c44391" configVersion="56f377c0a2d5e55f479d5ff594d05030a1841b99"/>
 		<Metadata name="Catalog.КИИ_МоделиИИ.Template.ПредустановленныеМодели.Template" id="7f6ae4b9-aebb-4bfc-890d-29e6d9c44391.0" configVersion="f9321d99efcb39ee0070553ef61fdb919b2e5a00"/>
 		<Metadata name="Catalog.КИИ_ЭкспертыИИ" id="92216d37-02a4-4619-b9ca-cf90fcf7f326" configVersion="2cacca7aaa83a2a3cc6550865a80e5e972d3f2e9">
@@ -62,20 +62,20 @@
 		<Metadata name="Catalog.КИИ_ЭкспертыИИ.Form.ФормаЭлемента" id="b1931dc0-b8e1-4044-8296-bc62fcc8de48" configVersion="29ed166cfad2abceb6b7a17ee08a97c00283129c"/>
 		<Metadata name="Catalog.КИИ_ЭкспертыИИ.Form.ФормаЭлемента.Form" id="b1931dc0-b8e1-4044-8296-bc62fcc8de48.0" configVersion="97b2ab7124e53b5adb864c28a078af537759f780"/>
 		<Metadata name="Catalog.КИИ_ЭкспертыИИ.Help" id="92216d37-02a4-4619-b9ca-cf90fcf7f326.1" configVersion="43afdd9e6b7a4c646b28b08e4a485a7744a1cda8"/>
-		<Metadata name="Catalog.КИИ_ЭкспертыИИ.ManagerModule" id="92216d37-02a4-4619-b9ca-cf90fcf7f326.3" configVersion="6b475f57a1273d890f3d6a74853ddd195a4c6837"/>
-		<Metadata name="Catalog.КИИ_ЭкспертыИИ.ObjectModule" id="92216d37-02a4-4619-b9ca-cf90fcf7f326.0" configVersion="504d2aac781fd3eb6acfb6528ba8151c5e6976e7"/>
+		<Metadata name="Catalog.КИИ_ЭкспертыИИ.ManagerModule" id="92216d37-02a4-4619-b9ca-cf90fcf7f326.3" configVersion="176cb6b0d267095af28f98c9550b4febd3657bbb"/>
+		<Metadata name="Catalog.КИИ_ЭкспертыИИ.ObjectModule" id="92216d37-02a4-4619-b9ca-cf90fcf7f326.0" configVersion="f86a5d7e4eceee511f3693a3cb7390d835af65cc"/>
 		<Metadata name="CommonModule.КИИ_КоннекторMCP" id="06489d34-988b-40bf-bf94-8ee764fbd925" configVersion="b4451dbb747e633a4f2ba92b64b958c02b0bad3f"/>
-		<Metadata name="CommonModule.КИИ_КоннекторMCP.Module" id="06489d34-988b-40bf-bf94-8ee764fbd925.0" configVersion="23856cf82e98d06300481dfd62fff8e802157a09"/>
+		<Metadata name="CommonModule.КИИ_КоннекторMCP.Module" id="06489d34-988b-40bf-bf94-8ee764fbd925.0" configVersion="fe74988108d09547472efec24426723ca3b0f40d"/>
 		<Metadata name="CommonModule.КИИ_КоннекторИИ" id="c109385f-a0c2-43c9-814d-9df80902b79b" configVersion="386e72dd452d9916742d5da85d1db5f1bca3a2cd"/>
-		<Metadata name="CommonModule.КИИ_КоннекторИИ.Module" id="c109385f-a0c2-43c9-814d-9df80902b79b.0" configVersion="5e327e80150b524739091d3c7775bb49b482ce59"/>
+		<Metadata name="CommonModule.КИИ_КоннекторИИ.Module" id="c109385f-a0c2-43c9-814d-9df80902b79b.0" configVersion="671067c17bd7505d504864e16c50e3b7c8a7cb96"/>
 		<Metadata name="CommonModule.КИИ_МаркдаунПарсерКлиентСервер" id="3d4ea4c1-1e67-44d6-983d-5878bdfd0133" configVersion="d46ca07b1286800ce8d8ceffe37ec23fd81fbb02"/>
-		<Metadata name="CommonModule.КИИ_МаркдаунПарсерКлиентСервер.Module" id="3d4ea4c1-1e67-44d6-983d-5878bdfd0133.0" configVersion="4168e7e9ce0850ee3f305bd94bd873b289c3d236"/>
+		<Metadata name="CommonModule.КИИ_МаркдаунПарсерКлиентСервер.Module" id="3d4ea4c1-1e67-44d6-983d-5878bdfd0133.0" configVersion="ced8d4fd135cd58939a23d9c0d11df89df4caa46"/>
 		<Metadata name="CommonPicture.КИИ_КартинкаПодсистемы" id="c4ba66d1-52f1-4a01-b502-1966d4070559" configVersion="c8977a91773a34d7ada7b29b02fc37e92cf9df89"/>
 		<Metadata name="CommonPicture.КИИ_КартинкаПодсистемы.Picture" id="c4ba66d1-52f1-4a01-b502-1966d4070559.0" configVersion="435f94188eb0dd0ec7b0c88de0bacb213fac65b3"/>
-		<Metadata name="Configuration.ИИКона" id="450ad8b8-f50e-4ba6-bc24-831f6dec8aa9" configVersion="3345227768ba537b4cc506cae5702c7a9fc9ffa0"/>
+		<Metadata name="Configuration.ИИКона" id="450ad8b8-f50e-4ba6-bc24-831f6dec8aa9" configVersion="1a71b5a5fd214a63b16876eb7ae85397fc5fb3e3"/>
 		<Metadata name="DataProcessor.КИИ_ТестИИ" id="d42ca800-f3ce-4d4d-a2e1-d85702a80243" configVersion="24e79336430e8b327c4d72fb2f6d35e23362ab74"/>
 		<Metadata name="DataProcessor.КИИ_ТестИИ.Form.Форма" id="8447382b-f13f-4eff-8d3e-d2edfa32ca4e" configVersion="28de3bebb06ab1f55ea069ceb5dda723d552bb8d"/>
-		<Metadata name="DataProcessor.КИИ_ТестИИ.Form.Форма.Form" id="8447382b-f13f-4eff-8d3e-d2edfa32ca4e.0" configVersion="31789f4c58c2d1c9147297b78eff8fd00bfaafbf"/>
+		<Metadata name="DataProcessor.КИИ_ТестИИ.Form.Форма.Form" id="8447382b-f13f-4eff-8d3e-d2edfa32ca4e.0" configVersion="2a43e0e77946c0aa8b4efb6cf450f570ce777de7"/>
 		<Metadata name="DataProcessor.КИИ_ТестИИ.Help" id="d42ca800-f3ce-4d4d-a2e1-d85702a80243.1" configVersion="0736d025a21f83c09e25a8f7321f059d5e9d15da"/>
 		<Metadata name="DataProcessor.КИИ_ТестИИ.Template.ШаблонДиалога" id="0605d1da-92cc-4046-9d01-3d7d8450d27e" configVersion="3714d4f96c2566ff2e4915572ec3bafad69cde1b"/>
 		<Metadata name="DataProcessor.КИИ_ТестИИ.Template.ШаблонДиалога.Template" id="0605d1da-92cc-4046-9d01-3d7d8450d27e.0" configVersion="5fe86291a5ff6c6d4b552b50b77f4210394b39bc"/>
@@ -136,7 +136,7 @@
 		<Metadata name="InformationRegister.КИИ_ЛогЗапросовИИ.Help" id="bb2e7d81-1a24-4829-867b-082c354b7822.0" configVersion="516604133ae0a68ffdae8f7c16c43480e7a322b5"/>
 		<Metadata name="Language.Русский" id="e6ba2103-1c43-46a8-927f-e84b27f1f54c" configVersion="488ab846d3c181b57953a5b3d324b5580f8562ab"/>
 		<Metadata name="Role.КИИ_БазовыеПрава" id="50161a8a-e4d4-4ef2-9257-082aefbc297b" configVersion="b6a11a8e86d74fb94ee5ae6f2ec620c09f4cc543"/>
-		<Metadata name="Role.КИИ_БазовыеПрава.Rights" id="50161a8a-e4d4-4ef2-9257-082aefbc297b.0" configVersion="f16d0c52e50a6b97bf9e77bd57cd1d8fdce3679d"/>
+		<Metadata name="Role.КИИ_БазовыеПрава.Rights" id="50161a8a-e4d4-4ef2-9257-082aefbc297b.0" configVersion="4749820fdec7930b9710e0f6bf6013ab18929eea"/>
 		<Metadata name="Role.КИИ_ПолныеПрава" id="a3b824f7-f2be-4e53-a4a1-fa18ca43bd8c" configVersion="72e25ec16f1f4212b95923c6da91abd9dd278e12"/>
 		<Metadata name="Role.КИИ_ПолныеПрава.Rights" id="a3b824f7-f2be-4e53-a4a1-fa18ca43bd8c.0" configVersion="8a9eaf13db6eeb43d0a3e61c8037259e3257fce6"/>
 		<Metadata name="Subsystem.КИИ_Коннектор" id="b43e9caa-ecd3-4fdc-8394-f3c94f0df0e2" configVersion="fbefdb1e14a53f05f168715b9e67a05c88a396de"/>
