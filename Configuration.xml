@@ -83,6 +83,7 @@
 			<CommonModule>КИИ_КоннекторMCP</CommonModule>
 			<CommonModule>КИИ_КоннекторИИ</CommonModule>
 			<CommonModule>КИИ_МаркдаунПарсерКлиентСервер</CommonModule>
+			<HTTPService>КИИ_Чат</HTTPService>
 			<Catalog>КИИ_MCPСерверы</Catalog>
 			<Catalog>КИИ_ИнструментыИИ</Catalog>
 			<Catalog>КИИ_МоделиИИ</Catalog>

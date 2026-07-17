@@ -85,6 +85,15 @@
 		<Metadata name="DataProcessor.КИИ_ТестМаркдаунПарсера.Help" id="9409ca95-8bf0-4aa3-a673-0ae1e4da3c73.1" configVersion="470e7f08e06748670afbca817f2bd85daa2bd7d4"/>
 		<Metadata name="DataProcessor.КИИ_ТестМаркдаунПарсера.Template.ШаблонHTML" id="a63c1f63-c359-4482-aa63-785718f098ad" configVersion="be9148b7ac282a2fb3ae9a4c49cd9dc9ea4d3fe8"/>
 		<Metadata name="DataProcessor.КИИ_ТестМаркдаунПарсера.Template.ШаблонHTML.Template" id="a63c1f63-c359-4482-aa63-785718f098ad.0" configVersion="038db02f32dae76402d96080499392bd0dd4f320"/>
+		<Metadata name="HTTPService.КИИ_Чат" id="4d0b5e7e-2940-44dd-9406-153df949125e" configVersion="4a36629b8a6472bd88aae8246d0ec88ab3bbaab5">
+			<Metadata name="HTTPService.КИИ_Чат.URLTemplate.Пинг" id="012c25b8-400e-48d4-a13d-358a9005cffa"/>
+			<Metadata name="HTTPService.КИИ_Чат.URLTemplate.Пинг.Method.GET" id="d183a2ca-b381-40c9-b0b5-5bdab89d3ba9"/>
+			<Metadata name="HTTPService.КИИ_Чат.URLTemplate.Эксперты" id="7c3b014f-15b4-405d-90d5-ef86ab5a800b"/>
+			<Metadata name="HTTPService.КИИ_Чат.URLTemplate.Эксперты.Method.GET" id="247bc44b-77c8-42e8-b110-c5fd881dce9d"/>
+			<Metadata name="HTTPService.КИИ_Чат.URLTemplate.Сообщение" id="51a6bd6c-093c-4567-af99-5a3f15efe39e"/>
+			<Metadata name="HTTPService.КИИ_Чат.URLTemplate.Сообщение.Method.POST" id="0daa8a0a-8cbf-48f5-b6ab-e7d5b6da7eae"/>
+		</Metadata>
+		<Metadata name="HTTPService.КИИ_Чат.Module" id="4d0b5e7e-2940-44dd-9406-153df949125e.0" configVersion="6101b66d238a4fdc3bebb9fa7d78811e72b3260e"/>
 		<Metadata name="Enum.КИИ_ТипыАвторизации" id="4bcdd79f-e0cb-4cbb-a00f-e2b558a30937" configVersion="555e7cdebff3444af4adb6965ae071c9f10207bd">
 			<Metadata name="Enum.КИИ_ТипыАвторизации.EnumValue.OAuth2ClientCredentials" id="4710b232-2842-44bf-94e4-20ad6affb2d5"/>
 			<Metadata name="Enum.КИИ_ТипыАвторизации.EnumValue.XApiKey" id="49539956-3db7-4344-9e4f-2e4bb19c5c8d"/>

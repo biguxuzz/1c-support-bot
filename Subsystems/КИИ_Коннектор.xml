@@ -29,6 +29,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КИИ_ТестМаркдаунПарсера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КИИ_MCPСерверы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КИИ_ИнструментыИИ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.КИИ_Чат</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
